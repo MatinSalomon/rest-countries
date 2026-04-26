@@ -1,1 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
 @import "tailwindcss";
+
+body {
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+.dark-text{
+    color: hsl(0, 100%, 100%);
+}
+
+.dark-element {
+  background-color: hsl(209, 23%, 22%);
+}
+
+.dark-bg{
+    background-color: hsl(207, 26%, 17%);
+}
+
+
+.light-text{
+    color: hsl(200, 15%, 8%);
+}
+
+.light-element{
+    background-color: hsl(0, 0%, 50%);
+}
+
+
+.light-bg{
+    background-color: hsl(0, 0%, 99%);
+}
