@@ -1,18 +1,22 @@
 import React from "react";
-import {NavBar} from "../../components/NavBar/NavBar";
 import { useAppContext } from "../../Context/AppContext";
 import { CountryCard } from "../../components/CountryCard/CountryCard";
+import { SearchInput } from "./../../components/SearchInput/SearchInput";
+
 
 function Home() {
-  const { countries, darkMode } = useAppContext();
+  const { countries, darkMode, searchTerm} = useAppContext();
   
+  const filteredCountries = searchTerm ? countries.filter((country) => country.name.toLowerCase().includes(searchTerm.toLowerCase())) : countries;
+
 
   return (
-    <div className={`${darkMode ? "dark-bg" : "light-bg"}`}>
-      <NavBar />
+    <div className={`min-h-screen xl:grid-cols-4 sm:px-20  px-10 pt-5 ${darkMode ? "dark-bg" : "light-bg"}`}>
+      <SearchInput />
 
-      <div className={`grid grid-cols-1 gap-8  md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 px-30 my-10`}>
-        {countries.slice(0, 24).map((country) => {
+      <div className={`grid grid-cols-1 gap-20 sm:grid-cols-2  xl:grid-cols-4 `}>
+
+        {filteredCountries.map((country) => {
           return (
             <CountryCard
               key={country.name}
