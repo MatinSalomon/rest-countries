@@ -1,6 +1,6 @@
 import React from "react";
 import { Title } from "../Title/Title";
-import { DarkMode } from "../Darkmode/DarkMode";
+import { DarkMode } from "../DarkMode/DarkMode.jsx";
 import { NavLink } from "react-router-dom";
 import { useAppContext } from "../../Context/AppContext";
 

@@ -1,6 +1,6 @@
 import React from "react";
 import { useAppContext } from "../../Context/AppContext";
-import { CountryCard } from "../../components/CountryCard/CountryCard";
+import { CountryCard } from "../../components/CountryCard/CountryCard.jsx";
 import { SearchInput } from "./../../components/SearchInput/SearchInput";
 
 

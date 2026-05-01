@@ -1,6 +1,6 @@
 import React from "react";
 import { Title } from "../Title/Title";
-import { DarkMode } from "../DarkMode/DarkMode.jsx";
+import { DarkMode } from "../DarkMode/DarkMode";
 import { useAppContext } from "../../Context/AppContext";
 
 function NavBar() {
