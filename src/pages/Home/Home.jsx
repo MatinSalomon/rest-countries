@@ -27,7 +27,7 @@ function Home() {
               key={country.name}
               flag={country.flags.png}
               name={country.name}
-              population={country.population}
+              population={country.population.toLocaleString('en-EN')}
               region={country.region}
               capital={country.capital}
               alpha3Code={country.alpha3Code}

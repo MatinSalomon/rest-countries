@@ -8,7 +8,7 @@ function Filter() {
 
     return (
         <select 
-        className={`w-full flex gap-3 md:w-2/6 p-4 rounded-md shadow-md mb-10 ${darkMode ? "dark-element" : "light-bg" } ${darkMode ? "dark-text" : "light-input" } w-full bg-transparent focus:outline-none `}
+        className={`w-1/2 flex gap-3 md:w-2/6 p-4 rounded-md shadow-md mb-10 ${darkMode ? "dark-element" : "light-bg" } ${darkMode ? "dark-text" : "light-input" }`}
         name="region" 
         onChange={(e) => setSelectedRegion(e.target.value)}>
             <option value="">Filter by Region</option>

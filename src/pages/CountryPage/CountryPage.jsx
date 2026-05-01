@@ -15,9 +15,6 @@ function CountryPage() {
   }
     
 
-  console.log(country.currencies.map((currency) => currency.code));
-  
-
   return (
     <div className={`min-h-screen xl:grid-cols-4 sm:px-20 px-10 pt-1 ${darkMode ? "dark-bg" : "light-bg"}`}>
     <Back />
@@ -33,7 +30,7 @@ function CountryPage() {
               <ul>
                 <li>
                 <p className={`text-md font-light mt-4  ${darkMode ? "dark-text" : "light-text"}`}>Native Name: {country.nativeName}</p>
-                <p className={`text-md font-light mt-4  ${darkMode ? "dark-text" : "light-text"}`}>Population: {country.population}</p>
+                <p className={`text-md font-light mt-4  ${darkMode ? "dark-text" : "light-text"}`}>Population: {country.population.toLocaleString('en-EN')}</p>
                 <p className={`text-md font-light mt-4  ${darkMode ? "dark-text" : "light-text"}`}>Region: {country.region}</p>
                 <p className={`text-md font-light mt-4  ${darkMode ? "dark-text" : "light-text"}`}>Sub Region: {country.subregion}</p>
                 <p className={`text-md font-light mt-4  ${darkMode ? "dark-text" : "light-text"}`}>Capital: {country.capital ? country.capital : 'Without capital'}</p>
@@ -42,7 +39,7 @@ function CountryPage() {
               <ul>
                 <li>
                 <p className={`text-md font-light mt-4  ${darkMode ? "dark-text" : "light-text"}`}>Top Level Domain: {country.topLevelDomain}</p>
-                <p className={`text-md font-light mt-4  ${darkMode ? "dark-text" : "light-text"}`}>Currencies: {country.currencies.map((currency) => currency.code)}</p>
+                <p className={`text-md font-light mt-4  ${darkMode ? "dark-text" : "light-text"}`}>Currencies: {country.currencies.map((currency) => currency.code).join(", ")}</p>
                 <p className={`text-md font-light mt-4  ${darkMode ? "dark-text" : "light-text"}`}>Languages: {country.languages.map((language) => language.name).join(", ")}</p>
                 </li>
               </ul>
