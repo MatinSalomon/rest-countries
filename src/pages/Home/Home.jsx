@@ -9,7 +9,6 @@ function Home() {
   
   const filteredCountries = searchTerm ? countries.filter((country) => country.name.toLowerCase().includes(searchTerm.toLowerCase())) : countries;
 
-
   return (
     <div className={`min-h-screen xl:grid-cols-4 sm:px-20  px-10 pt-5 ${darkMode ? "dark-bg" : "light-bg"}`}>
       <SearchInput />
@@ -25,6 +24,7 @@ function Home() {
               population={country.population}
               region={country.region}
               capital={country.capital}
+              alpha3Code={country.alpha3Code}
             />
           )
         })}

@@ -14,7 +14,7 @@ function App() {
           <NavBar />
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/country/:name" element={<CountryPage />} />
+            <Route path="/country/:alpha3Code" element={<CountryPage />} />
             <Route path="/*" element={<NotFound />} />
           </Routes>
         </AppProvider>
