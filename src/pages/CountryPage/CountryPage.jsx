@@ -19,7 +19,7 @@ function CountryPage() {
   
 
   return (
-    <div className={`min-h-screen xl:grid-cols-4 sm:px-20  px-10 pt-5 ${darkMode ? "dark-bg" : "light-bg"}`}>
+    <div className={`min-h-screen xl:grid-cols-4 sm:px-20 px-10 pt-1 ${darkMode ? "dark-bg" : "light-bg"}`}>
     <Back />
       <div className={`w-full grid lg:grid-cols-2 sm:grid-cols-1 pt-5 ${darkMode ? "dark-bg" : "light-bg"}`}>
 
@@ -36,21 +36,21 @@ function CountryPage() {
                 <p className={`text-md font-light mt-4  ${darkMode ? "dark-text" : "light-text"}`}>Population: {country.population}</p>
                 <p className={`text-md font-light mt-4  ${darkMode ? "dark-text" : "light-text"}`}>Region: {country.region}</p>
                 <p className={`text-md font-light mt-4  ${darkMode ? "dark-text" : "light-text"}`}>Sub Region: {country.subregion}</p>
-                <p className={`text-md font-light mt-4  ${darkMode ? "dark-text" : "light-text"}`}>Capital: {country.capital}</p>
+                <p className={`text-md font-light mt-4  ${darkMode ? "dark-text" : "light-text"}`}>Capital: {country.capital ? country.capital : 'Without capital'}</p>
                 </li>
               </ul>
               <ul>
                 <li>
                 <p className={`text-md font-light mt-4  ${darkMode ? "dark-text" : "light-text"}`}>Top Level Domain: {country.topLevelDomain}</p>
                 <p className={`text-md font-light mt-4  ${darkMode ? "dark-text" : "light-text"}`}>Currencies: {country.currencies.map((currency) => currency.code)}</p>
-                <p className={`text-md font-light mt-4  ${darkMode ? "dark-text" : "light-text"}`}>Languages: {country.currencies.map((currency) => currency.name)}</p>
+                <p className={`text-md font-light mt-4  ${darkMode ? "dark-text" : "light-text"}`}>Languages: {country.languages.map((language) => language.name).join(", ")}</p>
                 </li>
               </ul>
 
             </div>
 
             {country.borders ? <h2 className={`font-bold mt-5 ${darkMode ? "dark-text" : "light-text"}`}>Border Countries</h2> : null}
-            <div className="flex gap-2 w-full flex-wrap">
+            <div className="flex mb-6 gap-2 w-full flex-wrap">
               {country.borders?.map((border) => {
                 return (<BorderCountry key={border} border={border}/> 
                 )
