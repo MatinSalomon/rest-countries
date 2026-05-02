@@ -11,7 +11,7 @@ function Footer(){
     >
       <p className={`${darkMode ? "dark-text" : "light-text"}`}>
         Challenge by 
-        < a href="https://www.frontendmentor.io/?ref=challenge/" className="text-blue-600 underline hover:text-blue-800 ml-1">
+        <a href="https://www.frontendmentor.io/?ref=challenge/" className="text-blue-600 underline hover:text-blue-800 ml-1">
          Frontend Mentor</a>
       </p>
       <p className={`${darkMode ? "dark-text" : "light-text"}`}>

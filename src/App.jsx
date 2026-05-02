@@ -1,5 +1,5 @@
 import { HashRouter, Route, Routes } from 'react-router-dom'
-import { AppProvider } from './components/Context/AppProvider.jsx';
+import { AppProvider } from './components/Context/AppProvider';
 import { Home } from './pages/Home/Home'
 import { NotFound } from './pages/NotFound/NotFound'
 import { CountryPage } from './pages/CountryPage/CountryPage';

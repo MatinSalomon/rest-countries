@@ -1,8 +1,8 @@
 import React from "react";
 import { useAppContext } from "../../components/Context/AppContext";
-import { CountryCard } from "../../components/CountryCard/CountryCard.jsx";
+import { CountryCard } from "../../components/CountryCard/CountryCard";
 import { SearchInput } from "./../../components/SearchInput/SearchInput";
-import { Filter } from "../../components/Filter/Filter.jsx";
+import { Filter } from "../../components/Filter/Filter";
 
 
 function Home() {
@@ -24,7 +24,7 @@ function Home() {
         {filteredCountries.map((country) => {
           return (
             <CountryCard
-              key={country.name}
+              key={country.alpha3Code}
               flag={country.flags.png}
               name={country.name}
               population={country.population.toLocaleString('en-EN')}

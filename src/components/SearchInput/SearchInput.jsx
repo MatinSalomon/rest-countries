@@ -1,4 +1,4 @@
-import { useAppContext } from "../../components/Context/AppContext";
+import { useAppContext } from "../Context/AppContext";
 import { MagnifyingGlassIcon, MoonIcon, SunIcon } from "@heroicons/react/24/outline";
 
 function SearchInput() {
@@ -14,7 +14,8 @@ function SearchInput() {
         value={searchTerm}
         type="text" 
         placeholder="Search for a country"
-        className={`${darkMode ? "dark-text" : "light-input" } w-full bg-transparent focus:outline-none`}
+        aria-label="Search for a country"
+        className={`${darkMode ? "dark-text" : "light-input" } w-full bg-transparent`}
         />
     </div>
   )
