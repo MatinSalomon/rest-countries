@@ -1,8 +1,8 @@
 import React from "react";
-import { useAppContext } from "./../../Context/AppContext";
+import { useAppContext } from "../../components/Context/AppContext";
 import { Back } from "../../components/Back/Back";
 import { useParams } from "react-router-dom";
-import { BorderCountry } from "../../BorderCountry/BorderCountry";
+import { BorderCountry } from "../../components/BorderCountry/BorderCountry";
 
 function CountryPage() {
   const { darkMode, countries} = useAppContext();

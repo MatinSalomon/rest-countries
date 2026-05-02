@@ -1,5 +1,5 @@
 import React from "react";
-import { useAppContext } from "../../Context/AppContext";
+import { useAppContext } from "../../components/Context/AppContext";
 import { CountryCard } from "../../components/CountryCard/CountryCard.jsx";
 import { SearchInput } from "./../../components/SearchInput/SearchInput";
 import { Filter } from "../../components/Filter/Filter.jsx";

@@ -2,7 +2,7 @@ import React from "react";
 import { Title } from "../Title/Title";
 import { DarkMode } from "../DarkMode/DarkMode.jsx";
 import { NavLink } from "react-router-dom";
-import { useAppContext } from "../../Context/AppContext";
+import { useAppContext } from "../../components/Context/AppContext";
 
 function CountryCard({flag, name, population, region, capital, alpha3Code}) {
     const { darkMode } = useAppContext();

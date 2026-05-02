@@ -1,5 +1,5 @@
 import React from "react";
-import { useAppContext } from "../../Context/AppContext";
+import { useAppContext } from "../Context/AppContext";
 
 
 function Footer(){

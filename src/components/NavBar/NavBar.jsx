@@ -1,7 +1,7 @@
 import React from "react";
 import { Title } from "../Title/Title";
 import { DarkMode } from "../DarkMode/DarkMode";
-import { useAppContext } from "../../Context/AppContext";
+import { useAppContext } from "../Context/AppContext";
 
 function NavBar() {
     const { darkMode } = useAppContext();

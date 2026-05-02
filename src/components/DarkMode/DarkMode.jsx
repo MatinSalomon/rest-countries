@@ -1,5 +1,5 @@
 import React from "react";
-import { useAppContext } from "../../Context/AppContext";
+import { useAppContext } from "../Context/AppContext";
 import { MoonIcon, SunIcon } from "@heroicons/react/24/outline";
 
 function DarkMode() {

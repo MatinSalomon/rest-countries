@@ -1,5 +1,5 @@
 import React from "react";
-import { useAppContext } from "../../Context/AppContext";
+import { useAppContext } from "../../components/Context/AppContext";
 
 function Filter() {
     const {countries, darkMode, setSelectedRegion } = useAppContext();

@@ -1,4 +1,4 @@
-import { useAppContext } from "../../Context/AppContext";
+import { useAppContext } from "../../components/Context/AppContext";
 import { MagnifyingGlassIcon, MoonIcon, SunIcon } from "@heroicons/react/24/outline";
 
 function SearchInput() {

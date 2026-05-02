@@ -70,7 +70,7 @@ const country = countries.find(c => c.name === name);
  
 ### Continued development
  
-In future projects I want to:
+In future projects I want to:SSSS
  
 - Separate context responsibilities to avoid unnecessary re-renders (e.g. one context for data, another for theme)
 - Add loading and error states when fetching data
