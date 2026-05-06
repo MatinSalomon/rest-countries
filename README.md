@@ -57,12 +57,6 @@ const { countries, darkMode, searchTerm, selectedRegion} = useAppContext();
 ```
  
 ```jsx
-// Navigating to a country detail page
-const navigate = useNavigate();
-navigate(`/country/${country.name}`);
-```
- 
-```jsx
 // Reading URL params on the detail page
 const { name } = useParams();
 const country = countries.find(c => c.name === name);
