@@ -53,7 +53,7 @@ I also got comfortable with **useContext** as a way to centralize global state â
  
 ```jsx
 // Consuming global state with a custom hook
-const { countries, darkMode, setDarkMode } = useAppContext();
+const { countries, darkMode, searchTerm, selectedRegion} = useAppContext();
 ```
  
 ```jsx
